@@ -57,7 +57,8 @@ The fun fact is that they point to this fact in the documentation:
  as a transport protocol for their services.
 
 This default configuration has the consequence that with a higher number of requests the requests are parked until a free connection is available again.
-This parking is added to the actual request runtime and therefore a timeout may occur although the downstream service responds in time.
+This parking is added to the actual request runtime and therefore a timeout may occur although the downstream service responds in time. 
+In the sequence diagram, parking is symbolized by the loop icon.
  
 ## What you can do with this project
 This project consists of a simple sprint boot application and a JMeter load test (HTTP Request.jmx) to check which pool configuration is necessary to withstand a certain load.
