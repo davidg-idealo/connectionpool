@@ -67,7 +67,7 @@ Initially the default configuration of RestTemplate is used. If you use the load
 If you change in the DownStreamService the RestTemplate-Injection from `restTemplateDefault` to `restTemplateWithPoolConfig` and 
 run the load test again you will get only valid responses (response-code 200).
 
-## Recommandation
+## Recommendation
 Obvious: If you use RestTemplate, you should **always** configure the PoolingHttpClientConnectionManager corresponding to your needs.  
 Even better: Use [WebClient from Spring](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-webclient.html)  which is the _new_ default HTTPClient.
 This HTTPClient is fully reactive, which means non-blocking. (No connection pool is required.)
